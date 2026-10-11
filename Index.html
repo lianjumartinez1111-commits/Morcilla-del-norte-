@@ -1,129 +1,78 @@
+HTML
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Morcilla del Norte</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff8f0;
-      color: #292020;
-      text-align: center;
-    }
-    header {
-      background: #8b1018;
-      color: white;
-      padding: 30px 15px;
-      border-bottom: 6px solid #171313;
-    }
-    header h1 { margin: 0; font-size: 34px; }
-    header p { font-size: 17px; }
-    nav {
-      background: #171313;
-      padding: 14px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    .hero {
-      padding: 42px 18px;
-      background: #f1dfce;
-    }
-    .hero h2 { color: #8b1018; font-size: 28px; }
-    .productos {
-      padding: 25px 15px;
-    }
-    .tarjetas {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 18px;
-    }
-    .tarjeta {
-      background: white;
-      border: 2px solid #8b1018;
-      border-radius: 12px;
-      padding: 24px 15px;
-      width: 280px;
-      max-width: 100%;
-    }
-    .emoji { font-size: 55px; }
-    .tarjeta h3 { color: #8b1018; }
-    .contacto {
-      background: #292020;
-      color: white;
-      padding: 30px 15px;
-    }
-    .boton {
-      display: inline-block;
-      background: #8b1018;
-      color: white;
-      padding: 14px 22px;
-      margin: 10px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      background: #171313;
-      color: white;
-      padding: 15px;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morcilla del Norte</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fff8f0;color:#222}
+header{background:#a40000;color:white;text-align:center;padding:28px 15px}
+header h1{font-size:34px;margin:0}
+header p{font-size:17px;margin:12px 0 0}
+nav{background:#171717;text-align:center;padding:14px}
+nav a{color:white;text-decoration:none;margin:0 12px;font-weight:bold}
+.hero{text-align:center;padding:45px 20px;background:#f2dfcc}
+.hero h2{font-size:30px;color:#9e0000}
+.hero p{font-size:18px;line-height:1.6}
+section{padding:30px 18px;text-align:center}
+section h2{color:#a40000}
+.productos{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.producto{background:white;border-radius:12px;padding:22px;width:280px;box-shadow:0 2px 10px #0002}
+.producto .emoji{font-size:65px}
+.producto h3{color:#8f0000}
+.boton{display:inline-block;background:#16833c;color:white;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px}
+footer{background:#171717;color:white;text-align:center;padding:25px;line-height:1.8}
+</style>
 </head>
 <body>
-  <header>
-    <h1>MORCILLA DEL NORTE</h1>
-    <p>El sabor tradicional de nuestra tierra</p>
-    <strong>¡Receta de la abuela!</strong>
-  </header>
-
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <section class="hero" id="inicio">
-    <h2>Tradición que se disfruta</h2>
-    <p>Sabores artesanales para compartir en familia.</p>
-    <p>Calidad, tradición y sabor en cada bocado.</p>
-    <a class="boton" href="#productos">Conoce nuestros productos</a>
-  </section>
-
-  <section class="productos" id="productos">
-    <h2>Nuestros productos</h2>
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <div class="emoji">🍽️</div>
-        <h3>Morcilla artesanal</h3>
-        <p>El sabor tradicional que nos encanta.</p>
-      </div>
-      <div class="tarjeta">
-        <div class="emoji">🌭</div>
-        <h3>Chorizos</h3>
-        <p>Presentación en bandeja de 5 unidades.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contacto" id="contacto">
-    <h2>Visítanos</h2>
-    <p>Morcilla del Norte</p>
-    <p>Bello, Antioquia, Colombia</p>
-    <p>¡Será un gusto atenderte!</p>
-  </section>
-
-  <footer>
-    <p>© Morcilla del Norte - Tradición y sabor</p>
-  </footer>
+<header>
+<h1>MORCILLA DEL NORTE</h1>
+<p>El sabor tradicional que nos une</p>
+</header>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+<div class="hero" id="inicio">
+<h2>¡Tradición y sabor en cada bocado!</h2>
+<p>Disfruta el sabor de nuestros productos tradicionales.<br>
+Calidad, sabor y tradición para compartir en familia.</p>
+<p><strong>¡El auténtico sabor de la abuela!</strong></p>
+</div>
+<section id="productos">
+<h2>Nuestros productos</h2>
+<div class="productos">
+<div class="producto">
+<div class="emoji">🍽️</div>
+<h3>Morcilla tradicional</h3>
+<p>Un sabor tradicional ideal para disfrutar y compartir.</p>
+</div>
+<div class="producto">
+<div class="emoji">🌭</div>
+<h3>Chorizos</h3>
+<p>Deliciosos chorizos para acompañar tus comidas.</p>
+<p><strong>Disponibles en bandeja de 5 unidades.</strong></p>
+</div>
+</div>
+</section>
+<section>
+<h2>¿Por qué elegirnos?</h2>
+<p>❤️ Sabor tradicional</p>
+<p>🥘 Productos para compartir</p>
+<p>🏡 La tradición de nuestra cocina</p>
+</section>
+<section id="contacto">
+<h2>Contáctanos</h2>
+<p>Pregúntanos por nuestros productos y disponibilidad.</p>
+<a class="boton" href="https://wa.me/573217397795">Consultar por WhatsApp</a>
+</section>
+<footer>
+<strong>MORCILLA DEL NORTE</strong>
+<p>Tradición y sabor en tu mesa.</p>
+</footer>
 </body>
 </html>
